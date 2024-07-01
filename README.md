@@ -1,3 +1,3 @@
 # How-to-C
 
-USefull tips and use cases for your C learning.
+Usefull tips and use cases for your C learning.
