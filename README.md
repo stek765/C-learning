@@ -1,2 +1,3 @@
 # How-to-C
-A Complete Guide to nail your C test
+
+USefull tips and use cases for your C learning.
