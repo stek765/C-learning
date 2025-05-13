@@ -54,6 +54,7 @@ int main(int argc, char *argv[]) {
     // array usato da solo è uguale a &array[0]
     // esempio: *pointer = array; // uguale a *pointer = &array[0];
 
+    // pointer = array + 2 // pointer punta a array[2]
 
     // modo per trovare la lenght di qualcosa in c
     int lenght = sizeof(array) / sizeof(array[0]);
