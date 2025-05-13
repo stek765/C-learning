@@ -10,6 +10,10 @@
     Utilizzando i puntatori invece, gli passi l'indirizzo in memoria
     e quindi l'effettivo valore originale che verrà già modificato nella
     funzione senza ricopiare potenzialmente dei dati grandi per svolgere un'operazione elementare
+
+
+    Inoltre e forse più importante, non usando puntatori, non serve copiare dati in giro 
+    per la memoria, quindi non si spreca memoria e non si rallenta il programma.
 */
     
 int main(int argc, char *argv[]) {
@@ -18,9 +22,9 @@ int main(int argc, char *argv[]) {
     
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 //  I 3 MODI PRINCIPALI PER USARE I PUNTATORI: 
-    int  *p = &n;
-    int **g = &p;
-    int  *q = &(*p);
+    int  *p = &n;    // è un puntatore ad un intero
+    int **g = &p;    // è un puntatore ad un altro puntatore, quindi un doppio puntatore
+    int  *q = &(*p); // è un puntatore ad un altro puntatore, quindi un doppio puntatore
     
     // Stampa i valori puntati da p, g, e q
     printf("%d, %d, %d\n", *p, **g, *q);
@@ -43,7 +47,14 @@ int main(int argc, char *argv[]) {
 // RELAZIONE TRA ARRAY E PUNTATORI
 
     int array[] = {1,2,3,4,5,6,7,8,9};
-    int *arrpointer[9]; 
+    int *arrpointer[9]; // è un array di puntatori.. (non immediato da capire)
+    
+
+    // COSA MOLTO UTILE: 
+    // array usato da solo è uguale a &array[0]
+    // esempio: *pointer = array; // uguale a *pointer = &array[0];
+
+
     // modo per trovare la lenght di qualcosa in c
     int lenght = sizeof(array) / sizeof(array[0]);
     int i;
