@@ -71,7 +71,6 @@ int main(int argc, char *argv[]) {
         printf(" %d |", *(array+lenght));
         printf("  %d  ", *arrpointer[lenght]);
         printf("\n");
-
     }
     
     int  *c = array + 6;   // uguale a fare *c = &array[0] + i;
@@ -80,8 +79,10 @@ int main(int argc, char *argv[]) {
     
     printf("\n %d, %d, %d\n", *c, **d, *f);
     
-    //quindi in generale se devo utilizzare i valori di *c, a destra dell' = non uso puntatori
-    //mentre se devo modificare gli indirizzi, o ciò a cui qualcosa punta, li utilizzo insieme anche a &
+    // quindi in generale se devo utilizzare i valori di *c: 
+
+    // - a sinistra dell' = sto salvando l'indirizzo di qualcosa.. e per ottenerlo dovrò usare &   (int *p = &qualcosa) ,  salvo l'indirizzo di qualcosa
+    // - a destra dell' = non sto dereferenzando ovvero leggendo il contenuto di un indirizzo      (int val = *p)       ,  accedo al valore di p (uguale a *(*p))
     
     printf("\n - - - -\n");
     /* - - - - - - - - - - - - - - - - - - - - - - *//* - - - - - - - - - - - - - - - - - - - - - - */
