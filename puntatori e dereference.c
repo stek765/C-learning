@@ -131,12 +131,25 @@ int main(int argc, char *argv[]) {
     printf(" %d\n", (*(m2 + R))[C]          );
     printf(" %d\n",  *((*(m2 + R)) + C)      );
     printf(" %d\n",  *(&m2[0][0] + 4*R + C) );
-    
-    
-    
-    
-    
-    
-    
+        
 }
+
+/*
+attenzione con i puntatori perchè ogni indirizzo e tipo relativo (es: int *p , char *p)
+ha il suo spazio in memoria, e anche tra int e int* c'è differenza
+
+es: int -> 4 byte  |  int* -> 8 byte (64 bit)   | char* -> 8 byte (64 bit) 
+                   |  int* -> 4 byte (32 bit)   | char* -> 4 byte (32 bit)
+infatti aumentare il puntatore di 1 -> aumenta di byte diversi a seconda del tipo di puntatore
+
+- - - - - - 
+CURIOSITÀ:
+- - - - - - 
+
+se chiamo una funzione e gli passo un array, sto usando il -> size di tipo *
+ quindi: 
+    void fn (int a[10]) {
+        sizeof(a)  // mi ritorna il size di un puntatore (int *) e non dell'array
+    }
+*/
 

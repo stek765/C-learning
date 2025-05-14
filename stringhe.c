@@ -35,3 +35,7 @@ int main() {
 
     return 0;
 }
+
+// Array di caratteri e stringhe in C:
+// char nome1[] = {'H', 'i'};         // Array di caratteri (NON è una stringa)
+// char nome2[] = "Hi";               // Stringa (array di char + '\0' alla fine)
