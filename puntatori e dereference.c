@@ -142,6 +142,7 @@ es: int -> 4 byte  |  int* -> 8 byte (64 bit)   | char* -> 8 byte (64 bit)
                    |  int* -> 4 byte (32 bit)   | char* -> 4 byte (32 bit)
 infatti aumentare il puntatore di 1 -> aumenta di byte diversi a seconda del tipo di puntatore
 
+// il typecasting puà tornare utile per convertire un puntatore di un tipo in un altro al volo
 - - - - - - 
 CURIOSITÀ:
 - - - - - - 
