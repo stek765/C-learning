@@ -9,7 +9,7 @@ struct card{
 
 
 //creo delle variabili della prima struttura
-struct card c3, c4;
+struct card c3, c4; // (se le dichiaro dentro una funzione, sono nello stack,se le dichiaro fuori, sono nel data segment)
 
 
 //Struttura versione PRO: (cosa cambia: utilizzo la typedef -> quindi dove prima avevo le variabili c1,c2; 
