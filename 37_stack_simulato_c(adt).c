@@ -4,6 +4,8 @@
 	Cos'è ADT: Abstract Data Type, ovvero tipo di dati astratto
 	viene utilizzato per indicare una struttura dati con le relative 
 	operazioni, senza specificare un'implementazione.
+	Lo Stack è un esempio di ADT, in quanto definisce le operazioni
+	push, pop e top, senza specificare come sono implementate.
 	
 	- - - -
 	STACK = una delle più utili strutture dati standard.
