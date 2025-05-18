@@ -18,10 +18,11 @@ struct parcheggio
 
 typedef struct parcheggio p;
 
+// after the struct is defined, parcheggio becomes a usable variable type. (struct parcheggio aliased as p)
 
 void AggiungiPosti(p* structP, int postig);
 void AggiungiVeicolo(p* structP, int veicolo);
-int ParcheggioFull(p* structP);
+int  ParcheggioFull(p* structP);
 void VisualizzaLista(p* structP);
 
 
