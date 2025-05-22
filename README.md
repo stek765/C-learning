@@ -1,6 +1,6 @@
 # C-learning
 
-Questa repository è una raccolta personale di esempi, esperimenti e appunti relativi allo studio del linguaggio di programmazione C.
+Questa repository è una raccolta personale di esempi, esperimenti e appunti relativi allo studio del linguaggio di programmazione C, integrando completamente anche con il libro ufficiale.
 
 ## 📚 Cosa troverai
 
