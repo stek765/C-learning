@@ -8,9 +8,11 @@
 int main(int argc, char const *argv[])
 {
     int i;
+    // numero di argomenti: argc
     printf("There were %d arguments provided:\n", argc);
     for (i = 0; i < argc; i++)
     {
+        // ciascuno argomento: argv[i] (il primo è il nome del programma)
         printf("Argument #%d\t-\t%s\n", i, argv[i]);
     }
 

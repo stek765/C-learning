@@ -3,6 +3,8 @@
 #include <time.h>
 #include <string.h>
 
+#define n 10 // Define a constant for the size of the array
+
 int main(int argc, char *argv[]) {
     
     int *arr1, *arr2;
@@ -12,6 +14,9 @@ int main(int argc, char *argv[]) {
     
     arr1 = calloc(lung_arr, sizeof(int));  // Allocate memory for arr1
     arr2 = malloc(lung_arr * sizeof(int)); // Allocate memory for arr2
+    
+    int *test = malloc(n * sizeof(int)); 
+    int *test2 = malloc(sizeof(int));
     
     // Error excp
     if (arr1 == NULL || arr2 == NULL) {

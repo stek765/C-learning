@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h> // per malloc, random, atoi, etc..
+#include <time.h>  // per time, srand, rand
 
 int main() {
     int i;

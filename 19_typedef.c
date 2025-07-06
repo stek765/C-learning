@@ -12,10 +12,11 @@ struct esempiostruttura{
 
 int main(int argc, char *argv[]) {
 	
-	// Creo dei nuovi TIPI (intero, esempio, verastruttura)
-	typedef int intero;
-	typedef struct esempiostruttura  esempio;
-	typedef struct esempiostruttura* verastruttura;
+	// Creo dei nuovi TIPI (intero, esempio, verastruttura):
+
+	typedef int intero; // Definisco un nuovo tipo di dato intero
+	typedef struct esempiostruttura  esempio; // nuovo tipo di dato struct
+	typedef struct esempiostruttura* verastruttura; // nuovo tipo di dato struct puntatore
 
 	
 	intero n = 2;

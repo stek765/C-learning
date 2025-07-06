@@ -1,3 +1,6 @@
+// This program demonstrates the use of POSIX threads (pthreads) in C.
+// It creates multiple threads that perform busy work and then joins them.
+
 #include <pthread.h>
 #include <stdio.h>
 #include <stdlib.h>
@@ -21,6 +24,7 @@ int main() {
 
     /* Initialize and set thread detached attribute */
     pthread_attr_init(&attr);
+    // Set the thread to be joinable, which means the main thread has to wait for it to finish
     pthread_attr_setdetachstate(&attr, PTHREAD_CREATE_JOINABLE);
 
     for (t = 0; t < NUM_THREADS; t++) {
